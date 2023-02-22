@@ -1,0 +1,24 @@
+.ja{
+    background-color: greenyellow;
+        font-family: 'Courier New', Courier, monospace;
+        height: 2rem;
+        width: 40%;
+        padding: .4rem;
+}
+
+.nej{
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    height: 2rem;
+    width: 40%;
+}
+
+
+.div{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .popup{
+            position: absolute;
+            left: 4vw;
+            bottom: 4vh;
+            border: 1px solid black;
+            padding: 1rem;
+            min-width: 10rem;
+            background-color: bisque;
+        }
+        .hidden{
+        display: none;
+        }
+    </style>
+</head>
+<body>
+        <div id="popup" class="popup">
+    <h1>Vill du ha kakor?</h1>
+    <p>Vi kommar samla in all din information och dela den med Ryssland och Kina.</p>
+    <div class="div">
+        <button class="ja" id="accept">Ja</button>
+        <button class="nej" id="decline">Nej</button>
+    </div>
+    </div>
+    <script>
+        const accept = document.querySelector('#accept');
+        const decline = document.querySelector('#decline');
+        const popup = document.querySelector('#popup');
+        accept.addEventListener('click', (event) => {
+            console.log('Jag gillar kakor');
+            popup.classList.toggle("hidden");
+        })
+        decline.addEventListener('click', (event) => {
+            console.log('Du måsta acceptera kakor');
+            popup.classList.toggle("hidden");
+        })
+    </script>
+</body>
+</html>
